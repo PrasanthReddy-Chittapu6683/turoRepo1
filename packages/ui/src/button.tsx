@@ -4,6 +4,8 @@ import {
   StyleSheet,
   GestureResponderEvent,
   Text,
+  Button as RButton,
+  View
 } from "react-native";
 
 export interface ButtonProps {
@@ -13,23 +15,32 @@ export interface ButtonProps {
 
 export function Button({ text, onClick }: ButtonProps) {
   return (
-    <TouchableOpacity style={styles.button} onPress={onClick}>
-      <Text style={styles.text}>{text}</Text>
-    </TouchableOpacity>
+    <>
+      <View style={{ margin: 10 }}>
+        <RButton title="Hey Native Button" color="#6db649" />
+      </View>
+      <View>
+        <TouchableOpacity style={styles.button} onPress={onClick}>
+          <Text style={styles.text}>{text}</Text>
+        </TouchableOpacity>
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   button: {
-    maxWidth: 200,
+    maxWidth: 300,
     textAlign: "center",
-    borderRadius: 10,
+    borderRadius: 20,
+    marginTop: 70,
     paddingTop: 14,
     paddingBottom: 14,
     paddingLeft: 30,
     paddingRight: 30,
-    fontSize: "15px",
-    backgroundColor: "#2f80ed",
+    fontSize: "25px",
+    backgroundColor: "#3dce9d",
+
   },
   text: {
     color: "white",

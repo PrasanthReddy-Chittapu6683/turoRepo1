@@ -11,7 +11,7 @@ export default function Native() {
           console.log("Pressed!");
           alert("Pressed!");
         }}
-        text="Boop"
+        text="Native Button Component"
       />
       <StatusBar style="auto" />
     </View>
@@ -21,7 +21,7 @@ export default function Native() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#97dde2",
     alignItems: "center",
     justifyContent: "center",
   },
