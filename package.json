@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
+    "dev": "turbo dev --no-cache --continue --no-daemon",
+    "build": "turbo build --no-daemon",
     "clean": "turbo clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
   },
@@ -11,8 +11,5 @@
     "turbo": "latest"
   },
   "packageManager": "npm@8.10.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "workspaces": ["apps/*", "packages/*"]
 }
