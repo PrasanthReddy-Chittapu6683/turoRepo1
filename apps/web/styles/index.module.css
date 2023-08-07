@@ -1,3 +1,43 @@
 .container {
   text-align: center;
+  background-color: rgb(228, 228, 228);
+}
+
+.content {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-image: url(/primary_banner_waves.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 431px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.headerTitle {
+  flex: 0.6;
+  font-size: 60px;
+
+}
+
+.headerDescription {
+  flex: 0.6;
+  font-size: 18px;
+}
+
+.bodyContent {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 20px);
 }

@@ -1,18 +1,28 @@
 import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { Button } from "ui";
+import { AppButton, NativeButton } from "ui";
+// import { Button } from "ui";
 
 export default function Native() {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Native Mobile APP</Text>
-      <Button
+      {/* <button>
+        <Text>TTT</Text>
+      </button>
+      <AppButton
         onClick={() => {
           console.log("Pressed!");
           alert("Pressed!");
         }}
-        text="Native Button Component"
-      />
+        label="Web Button Component"
+      /> */}
+      <NativeButton
+        onClick={() => {
+          console.log("Native Button Pressed!");
+          alert("Native Button Pressed!");
+        }}
+        text="Native Button Component" />
       <StatusBar style="auto" />
     </View>
   );

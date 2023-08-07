@@ -30,7 +30,7 @@ export function WebButton({ text, onClick }: WebButtonProps) {
       <button
         type="button"
         onClick={onClick}
-        style={{ backgroundColor: "teal", height: "70px", width: "170px", borderRadius: "10px", color: "whitesmoke", borderColor: "lightslategray" }}
+        style={{ backgroundColor: "black", height: "70px", width: "170px", borderRadius: "10px", color: "whitesmoke", borderColor: "lightslategray" }}
       >
         {text}
       </button>
