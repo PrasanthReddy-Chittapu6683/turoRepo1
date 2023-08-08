@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+import { AppButton, NativeButton } from 'ui';
 import './App.css';
-import { Button, WebButton } from 'ui';
+// import { Button, WebButton } from 'ui';
 
 function App() {
   return (
     <div className="App">
-      <h1>Storybook App</h1>
-      <WebButton text='Web Button' />
-      <Button text='Native Button' />
+      <h1>React App</h1>
+      <AppButton primary={true} label='New Button' size='small' />
+      <AppButton primary={true} label='New Button' size='medium' />
+      <AppButton primary={true} label='New Button' size='large' />
+      <NativeButton text='Native Button' onClick={() => { alert("Clicked") }} />
+
+      {/* <WebButton text='Web Button' />
+      <Button text='Native Button' /> */}
     </div>
   );
 }
