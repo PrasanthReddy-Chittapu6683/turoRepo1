@@ -4,15 +4,18 @@ import { AppButton, NativeButton } from "ui";
 // import { WebButton } from "ui";
 
 import styles from "../styles/index.module.css";
+import { useMyCustomHook } from "models";
 
 export default function Web() {
+  const data = useMyCustomHook("Heyyy");
+  console.log("data>>>", data)
   return (
     <div className={styles.container}>
 
       <div className={styles.header}>
         <div className={styles.content}>
 
-          <h1 className={styles.headerTitle}>Employee Investment  Program</h1>
+          <h1 className={styles.headerTitle}>Employee Investment Programssss</h1>
           <p className={styles.headerDescription}>For over 30 years, Apollo has offered industry-leading alternative investments to some of the most sophisticated investors in the world. We are proud to offer eligible employees the opportunity to invest in Apollo products side by side with those investors, often on a no-fee, no-carry basis.</p>
         </div>
       </div>

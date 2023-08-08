@@ -1,7 +1,8 @@
 {
-  "name": "storybook-app",
+  "name": "models",
   "version": "0.1.0",
-  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -17,14 +18,12 @@
     "web-vitals": "^2.1.4",
     "ui": "*",
     "tsconfig": "*",
-    "models": "*"
+    "tsup": "^6.0.1"
   },
   "scripts": {
-    "dev": "react-scripts start --port 3000",
-    "start": "react-scripts start --port 3000",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "tsup --watch",
+    "start": "tsup --watch",
+    "build": "tsup "
   },
   "eslintConfig": {
     "extends": ["react-app", "react-app/jest"]
