@@ -1,8 +1,11 @@
 import { AppButton, NativeButton } from 'ui';
 import './App.css';
 // import { Button, WebButton } from 'ui';
+import { isValidArray } from "myutils";
 
 function App() {
+  const dataArray = []
+  console.log(isValidArray(dataArray, true))
   return (
     <div className="App">
       <h1>React App</h1>
