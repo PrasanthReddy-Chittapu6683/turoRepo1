@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { AppButton, NativeButton } from "ui";
 import { useMyCustomHook } from "models";
+import { isValidArray } from "myutils";
 // import { Button } from "ui";
 
 export default function Native() {
@@ -9,9 +10,13 @@ export default function Native() {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Native Mobile APP</Text>
-      <Text>
-        {data?.data} loading flag is {data?.loading?.toString()}
-      </Text>
+      <View>
+        <Text>My Custom hook func</Text>
+
+        <Text>
+          {data?.data} loading flag is {data?.loading?.toString()}
+        </Text>
+      </View>
       {/* <button>
         <Text>TTT</Text>
       </button>
@@ -26,7 +31,8 @@ export default function Native() {
       <NativeButton
         onClick={() => {
           console.log("Native Button Pressed!");
-          alert("Native Button Pressed!");
+          alert(`Native Button Pressed!${isValidArray([], true)}`);
+
         }}
         text="Native Button Component" />
       <View style={styles.card}>

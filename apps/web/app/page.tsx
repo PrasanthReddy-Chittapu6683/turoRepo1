@@ -2,13 +2,15 @@
 
 import { AppButton, NativeButton } from "ui";
 // import { WebButton } from "ui";
-
 import styles from "../styles/index.module.css";
 import { useMyCustomHook } from "models";
+import { isValidArray } from "myutils";
 
 export default function Web() {
   const data = useMyCustomHook("Heyyy");
   console.log("data>>>", data)
+  const dataArray = []
+  console.log(isValidArray(dataArray, true))
   return (
     <div className={styles.container}>
 
